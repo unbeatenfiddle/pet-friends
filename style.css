@@ -188,7 +188,9 @@ button {
     color: #f9faf8;
     background-color: #3882f6;
     border: 2px solid;
+    max-height: 75px;
     font-size: 16px;
+    align-self: center;
     padding-left: 25px;
     padding-right: 25px;
 
