@@ -2,15 +2,17 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Header CSS */
+
 header {
     background-color: #1F2937;
-    font: 800 18px sans-serif;
+    font: 18px sans-serif;
     color: #f9faf8;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
-    
+    padding-bottom: 50px;  
 }
 
 .title-bar-container {
@@ -28,14 +30,16 @@ li {
     text-align: center;
     padding: 5px;
     list-style-type: none;
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .logo {
-    width: 3%;
-    height: auto;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    min-width: 82px;
-    min-height: 82px;
+    min-width: 32px;
+    min-height: 32px;
 }
 
 .header-intro-container {
@@ -43,17 +47,25 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
+    text-align: center;
 }
 
 .header-left-side {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    max-width: 500px;    
+    max-width: 500px;
+    align-items: center;    
 }
 
-.intro-image-container{
+.header-title {
+    text-align: center;
+}
+
+.intro-image-container{ 
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 button {
@@ -62,16 +74,50 @@ button {
     border: none;
     font-size: 16px;
     border-radius: 8px;
-
 }
 
-
 .intro-image {
-    width: 3%;
-    height: auto;
-    min-width: 82px;
-    min-height: auto;
-    max-width: 82px;
-    max-height: auto;
-    margin: 5px;
+    max-height: 150px;
+    padding: 10px;
+}
+
+/* Body Style */
+
+body {
+    background-color: #f9faf8;
+    margin: 0;
+}
+
+.body-header {
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.pet-intro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+.pet-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    padding: 20px
+}
+
+p {
+    text-align: justify;
+    text-align-last: center;
+}
+
+.pet-image{
+    max-width: 150px;
+    border: 5px solid #3882f6;
+    border-radius: 50%;
 }
