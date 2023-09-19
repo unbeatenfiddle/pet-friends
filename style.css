@@ -4,19 +4,20 @@
 
 /* Header CSS */
 
-header {
-    background-color: #1F2937;
+body {
     font: 18px sans-serif;
     color: #f9faf8;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
+    margin: 0;
     padding-bottom: 50px;  
 }
 
-.title-bar-container {
+.title-bar {
     display: flex;
+    background-color: #1F2937;
     justify-content: space-around;
     padding: 10px;
 }
@@ -42,7 +43,8 @@ li {
     min-height: 32px;
 }
 
-.header-intro-container {
+.header {
+    background-color: #1F2937;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -54,8 +56,11 @@ li {
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    align-items: center;    
+    align-items: center;
+    padding-right: 20px;    
 }
+
+
 
 .header-title {
     text-align: center;
@@ -81,17 +86,11 @@ button {
     padding: 10px;
 }
 
-/* Body Style */
-
-body {
-    background-color: #f9faf8;
-    margin: 0;
-}
-
-.body-header {
+.body-title {
     font-size: 36px;
     font-weight: 800;
     text-align: center;
+    color: #1F2937;
 }
 
 .pet-intro-container {
@@ -111,13 +110,86 @@ body {
     padding: 20px
 }
 
-p {
+.pet-summaries {
+    padding-top: 30px;
     text-align: justify;
     text-align-last: center;
+    color: #1F2937;
 }
 
 .pet-image{
     max-width: 150px;
     border: 5px solid #3882f6;
     border-radius: 50%;
+}
+
+.quote-section{
+    background-color: #E5E7EB;
+    color:#1F2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    font: 36px;
+    font-style: italic;
+    font-weight: 200;
+    max-width: 500px;
+
+}
+
+.quote-author {
+    font-weight: 800;
+    max-width: 500px;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.call-to-action{
+    background-color: #3882f6;
+    max-width: 750px;
+    align-self: center;
+    margin: 50px;
+    border-radius: 25px;
+}
+
+.action-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    padding-right: 25px;
+}
+
+.top-text{
+    font-weight: 800;
+}
+
+.bottom-text{
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.action-button{
+    color: #f9faf8;
+    background-color: #3882f6;
+    border: 2px solid;
+    font-size: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+
 }
